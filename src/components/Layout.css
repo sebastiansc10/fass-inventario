@@ -1,0 +1,74 @@
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #fff;
+  border-right: 1px solid var(--borde);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar-marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--borde);
+}
+.sidebar-marca strong { display: block; font-size: 16px; letter-spacing: 0.04em; }
+.sidebar-marca small { color: var(--texto-suave); font-size: 12px; }
+.marca-logo {
+  width: 34px; height: 34px; border-radius: 8px;
+  background: var(--acento); color: #fff;
+  display: grid; place-items: center; font-weight: 800;
+}
+
+nav { flex: 1; overflow-y: auto; padding: 8px 0; }
+.grupo { padding: 6px 0; }
+.grupo-titulo {
+  margin: 8px 20px 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--texto);
+}
+.enlace {
+  display: block;
+  padding: 9px 20px;
+  color: var(--texto);
+  text-decoration: none;
+  font-size: 15px;
+}
+.enlace:hover { background: #f9fafb; }
+.enlace.activo {
+  background: var(--acento-suave);
+  color: var(--acento);
+  font-weight: 700;
+}
+
+.sidebar-usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-top: 1px solid var(--borde);
+}
+.sidebar-usuario div { flex: 1; min-width: 0; }
+.sidebar-usuario strong { display: block; font-size: 14px; }
+.sidebar-usuario small { color: var(--texto-suave); font-size: 12px; }
+.sidebar-usuario button {
+  border: 1px solid var(--borde); background: #fff; border-radius: 6px;
+  width: 32px; height: 32px; cursor: pointer; font-size: 15px;
+}
+.avatar {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: #1f2937; color: #fff; font-size: 13px; font-weight: 700;
+  display: grid; place-items: center;
+}
+
+.contenido { padding: 28px 40px 48px; min-width: 0; }
